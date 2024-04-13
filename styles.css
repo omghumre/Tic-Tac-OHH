@@ -68,6 +68,7 @@ body {
     animation: blink 0.5s infinite;
 }
 
+
 .vanishing {
     color: #f44336; /* Red color */
     transition: color 0.3s ease; /* Smooth transition */
