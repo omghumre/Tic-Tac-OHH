@@ -13,8 +13,9 @@ body {
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 20px;
+    grid-gap: 5px;
+    margin: 50px;
+    padding: 0px;
 }
 
 .cell {
@@ -37,6 +38,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Added for responsiveness */
 }
 
 .retro-text {
@@ -51,6 +53,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 0 #000;
     transition: all 0.3s ease;
+    padding: 10px 20px; /* Added for better responsiveness */
 }
 
 .retro-button:hover {
@@ -68,7 +71,6 @@ body {
     animation: blink 0.5s infinite;
 }
 
-
 .vanishing {
     color: #f44336; /* Red color */
     transition: color 0.3s ease; /* Smooth transition */
@@ -77,37 +79,90 @@ body {
 .retro-footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .retro-footer-logo {
+}
+
+.retro-footer-logo {
     font-size: 24px;
     font-weight: bold;
-  }
-  
-  .retro-footer-social {
+}
+
+.retro-footer-social {
     margin-top: 20px;
-  }
-  
-  .social-icon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.social-icon {
     color: #fff;
     font-size: 24px;
     margin: 0 10px;
     text-decoration: none;
-  }
-  
-  .social-icon:hover {
+}
+
+.social-icon:hover {
     color: #ffd700;
-  }
-  
-  .retro-footer-copy {
+}
+
+.retro-footer-copy {
     margin-top: 20px;
     font-size: 14px;
-  }
-  
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .game-container {
+        max-width: 300px;
+        margin: 30px auto;
+    }
+
+    .game-board {
+        margin: 30px 30px;
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 36px;
+    }
+
+    .retro-footer-logo {
+        font-size: 20px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        max-width: 250px;
+    }
+
+    .cell {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .retro-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .retro-footer-logo {
+        font-size: 18px;
+    }
+
+    .social-icon {
+        font-size: 16px;
+    }
+}
