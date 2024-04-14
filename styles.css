@@ -166,3 +166,27 @@ body {
         font-size: 16px;
     }
 }
+
+
+@keyframes laughAnimation {
+  0% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(1.2);
+  }
+  50% {
+      transform: scale(0.8);
+  }
+  75% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.laugh-emoji {
+  font-size: 48px;
+  animation: laughAnimation 0.5s ease-in-out;
+}
