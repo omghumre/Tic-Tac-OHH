@@ -12,7 +12,7 @@ Welcome to Tic Tac Ohh! This classic game brings back the nostalgia of retro gam
 
 ## Showcase
 
-![Retro Tic Tac Toe Screenshot](screenshot.png)
+![Retro-inspired Design](full.png)
 
 ## Getting Started
 
