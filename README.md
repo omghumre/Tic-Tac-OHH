@@ -2,6 +2,12 @@
 
 Welcome to Tic Tac Ohh! This classic game brings back the nostalgia of retro gaming with a modern twist.This game never **DRAW**. Challenge your friends or play against the computer in this timeless battle of Xs and Os.
 
+## Enjoy it here
+
+https://omghumre.github.io/Tic-Tac-OHH/
+
+
+
 ## Features
 
 - **New Rule: The last played move will disappear after 6 moves.**
