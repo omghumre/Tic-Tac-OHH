@@ -42,7 +42,7 @@ body {
 }
 
 .game-info {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; /* Added for responsiveness */
